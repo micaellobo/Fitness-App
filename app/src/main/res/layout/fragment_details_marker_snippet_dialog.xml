@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".ui.map.DetailsMarkerSnippetDialogFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/gradientbackground">
+
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felgueiras"
+            android:textColor="#ffffff"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCity"
+            android:text="Sol"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/tvTime"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgIcon"
+            android:layout_alignParentEnd="true"
+            android:text="25º"
+            android:textColor="#ffffff"
+            android:textSize="70sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlMain"
+        android:background="#ffffff"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgfeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sensacaotermica" />
+
+        <TextView
+            android:id="@+id/tvTitleFeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/imgfeelLike"
+            android:text="Sensação"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvValueFeelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitleFeelLike"
+            android:layout_alignStart="@+id/tvTitleFeelLike"
+            android:text="30º"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/imgDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgfeelLike"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/distance" />
+
+        <TextView
+            android:id="@+id/tvTitleDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imgDistance"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/imgDistance"
+            android:text="Distancia"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitleDistance"
+            android:layout_alignStart="@+id/tvTitleDistance"
+            android:text="25km"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.workout.DetailsWorkoutFragment">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:innerRadius="0dp"
+                android:shape="rectangle"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10.0dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvNomeTreino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:text="Mountain Climber"
+                            android:textAllCaps="true"
+                            android:textColor="#3D6CFC"
+                            android:textSize="15.0dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12/02/2022"
+                            android:textColor="#ffff5722"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTime"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <EditText
+                        android:id="@+id/etTime"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+                        android:text="56"
+                        android:textColor="#3D6CFC"
+                        android:textSize="25sp"
+                        app:drawableLeftCompat="@drawable/timer" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:text="Duração"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSteps"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <EditText
+                        android:id="@+id/et_steps"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:text="2983"
+                        android:textColor="#3D6CFC"
+                        android:textSize="25sp"
+                        app:drawableLeftCompat="@drawable/steps" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:text="Passos"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCalories"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <EditText
+                        android:id="@+id/etCalories"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:text="12344"
+                        android:textColor="#3D6CFC"
+                        android:textSize="25sp"
+                        app:drawableLeftCompat="@drawable/calories" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:text="Calorias"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carDistance"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <EditText
+                        android:id="@+id/et_distance"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+
+                        android:inputType="number"
+                        android:text="234"
+                        android:textColor="#3D6CFC"
+                        android:textSize="25sp"
+                        app:drawableLeftCompat="@drawable/distance" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_weight="6"
+                        android:text="Distancia(m)"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_reps"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <EditText
+                        android:id="@+id/et_reps"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:text="9084"
+                        android:textColor="#3D6CFC"
+                        android:textSize="25sp"
+                        app:drawableLeftCompat="@drawable/repeticao" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:text="Repetições"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_edit_save_changes"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="#B5D3EC"
+                    android:insetLeft="1dp"
+                    android:insetTop="1dp"
+                    android:insetRight="1dp"
+                    android:insetBottom="1dp"
+                    android:text="Editar"
+                    android:textColor="#3D6CFC"
+                    android:textSize="14sp"
+                    app:cornerRadius="50dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_delete_cancel"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:backgroundTint="#B5D3EC"
+                    android:insetLeft="1dp"
+                    android:insetTop="1dp"
+                    android:insetRight="1dp"
+                    android:insetBottom="1dp"
+                    android:text="Eliminar"
+                    android:textColor="#3D6CFC"
+                    android:textSize="14sp"
+                    app:cornerRadius="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

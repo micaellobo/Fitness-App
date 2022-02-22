@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.workout.InsertInfoWorkoutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/gradientbackground"
+        android:gravity="center"
+        android:text="Informação Treino"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <LinearLayout
+            android:id="@+id/linearSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/run1" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Passos"
+                android:inputType="number"
+                android:maxLength="999999999"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:errorEnabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/calories" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Calorias"
+                android:inputType="number"
+                android:maxLength="999999999"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:errorEnabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/linerDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/timer" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Duração(min)"
+                android:inputType="number"
+                android:maxLength="999999999"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:errorEnabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/distance" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Distância(m)"
+                android:inputType="number"
+                android:maxLength="999999999"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:errorEnabled="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearReps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/repeticao" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvReps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Nº Repetições"
+                android:maxLength="999999999"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:errorEnabled="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
